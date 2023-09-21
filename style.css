@@ -5,12 +5,13 @@
   font-family: sans-serif; 
 }
 
-.top-cover {
+.cover {
   background-color: rgb(152,168,141);
   color: white;
   padding:10px;   
   text-align: center;
-  font-size: .8rem; 
+  font-size: .8rem;
+  z-index: 1000;  
 }
 
 ul {
@@ -18,56 +19,64 @@ ul {
 }
 
 /* navbar */
+header{
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index:1000;
+}
 
+nav{
+  position: relative;
+}
+/* nav ul */
 .navbar {
-  background-color: #535353;  
+  background-color: #98a29a;  
   display: flex;  
   justify-content: space-between;
   align-items: center;
   flex-grow: 5;  
   padding: 20px;  
 }
-
+/*  nav li */
 .nav-left {
   display: flex;
   gap: 25px;
   margin-left: 25px;
 }
-
-
+/*  nav li */
 .nav-right{
   display: flex;
   gap: 25px;
   margin-right: 25px;
 }
-
 .nav-text {
   color: white;
 }
-
 i {
   color: white;
 }
-
 a{
   color: white;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
 #dropdown {
   border: none;
-  background-color: rgb(83,83,83);
+  background-color:#98a29a;
   color: white;
   font-size: 16px;
-  cursor: pointer;
+  cursor: pointer;  
+}
+#dropdown:hover{
+  text-decoration: underline;
 }
 
 /* header Section */
-
 .one {
   margin-top: 100px;
 }
@@ -102,7 +111,7 @@ button:hover{
   position: relative;
   width: 100%;
   display: block;
-  margin: auto ;
+  margin: auto 0 ;
 }
 
 .carousel-item {
@@ -253,18 +262,7 @@ h2 {
   align-items: center;
 }
 
-nav{
-  color: white;
-  height: 50px;
-  background: inherit;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  position: sticky;
-  top: 0%;
-  transition: background-color .8s ease-in-out;
-  transition: color .8s ease-in-out;
-}
+
 
 .scrolled{
   background-color: white;
